@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Formulario</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<script src="SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Formulario</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<script src="SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<script src="funciones.js" rel="text/javascript"></script>
+
+</head>
+<body class="centro" onLoad="cargar_variables()">
+      <form action="pagPedido.php" method="post">
+        <table width="100%">
+          <tr>
+            <h1 style="blue; front-size: 40 px;">Planilla Geratrico:</h1>
+              <label>
+              <div align="center"></div>
+              </label></td>
+          </tr>
+          <tr>
+            <td>
+              <table align="center">
+                <tr>
+                  <td colspan="2" align="center"><strong>Documento de Identidad</strong></td>
+                </tr>
+                  <td>Primer Nombre:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr>
+                  <td>Segundo Apellido:</td>
+                  <td><input name="Apellido" type="text" id="Apellido" tabindex="3"/></td>
+                </tr>
+                <tr>
+                  <td>Primer Apellido:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr>
+                  <td>Segundo Apellido:</td>
+                  <td><input name="Apellido" type="text" id="Apellido" tabindex="3"/></td>
+                </tr>
+                <tr>
+            
+              </table></td>
+            <td><table align="center">
+                <tr>
+            <td colspan="2" ><table width="600px" align="center">
+                <tr>
+                  <td width="25%">Tipo de Identidad:</td>
+                  <td><span id="elegir_producto" >
+                    <select name="producto_select" id="producto_select" onchange="elegir_producto_aceptar()"  tabindex="12">
+                      <option value="elegir">Cedula de ciudadania</option>
+                      <option value="acetato">Cedula de extranjeria</option>
+                      <option value="alpaseda">Permiso especial de permanencia</option>
+                      <option value="arpillera">Permiso por Proteccion Temporal</option>
+                      </tr>                       <tr>
+                  <td colspan="2" align="center"><strong>Contacto</strong></td>
+                </tr>
+                  <td>Correo elecrtonico:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr>
+                  <td>Numero del celular:</td>
+                  <td><input name="Apellido" type="text" id="Apellido" tabindex="3"/></td>
+                </tr>
+                <tr>
+                  <td>Pais:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr>
+                  <td>Departamento:</td>
+                  <td><input name="Apellido" type="text" id="Apellido" tabindex="3"/></td>
+                </tr>
+                <tr>
+                  <td>Municipio:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr><td>Direccion Ingresada:</td>
+                  <td><input name="Nombre" type="text" id="Nombre" tabindex="2"/></td>
+                </tr>
+                <tr>
+
+              </table></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">&nbsp;</td>
+          </tr>
+          <tr>                            
+                    
+
+                </tr>
+              </table>
+              <div align="center">
+                
+              </div></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" name="lista_productos_pedidos", id="">&nbsp;</td>
+          </tr>
+          <tr>
+                      
+            <td colspan="2" align="left"><span id="productos_comprados"></span></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center"><strong>COMENTARIO / GERATRICO</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">:
+              <textarea name="Comentario" cols="70" rows="4" id="Comentario" tabindex="16" input="input"></textarea>
+              </textarea>
+              </textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left">&nbsp;</td>
+          </tr>
+          <tr>
+            <td><div align="right">
+                <input type="submit" name="input" value="Enviar Formulario" tabindex="17"/>
+              </div></td>
+            <td><input type="reset" name="Resetear" value="Borrar Datos Personales" tabindex="18"/></td>
+          </tr>
+        </table>
+      </form></td>
+    <td class="tablaBordeDer">&nbsp;</td>
+  </tr>
+  <tr >
+    <td class="tablaAba" colspan="3"></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2215132-8";
+urchinTracker();
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
+</body>
+</html>
